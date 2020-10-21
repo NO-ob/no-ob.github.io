@@ -1,0 +1,246 @@
+/*sections------------------------------------------------------------------- */
+
+
+html{
+    font-size: 1em;  
+    --colourBG: #fff;
+    --colourBlocks: #ffb3ff;  /* Variables for colours so hex codes dont need to be typed out every time they are needed. This also 
+                                  allows quick editing of multiple colours on a page */ 
+    --colourArticle: #404040;
+    --pageBG:#b3faf4;
+    --colourHeadtext: #fff;
+    --colourSubtext: #fff;
+    --colourArticletext: #fc7efc; 
+
+}
+body {
+
+	background-color: var(--pageBG);
+     background-image: url("../images/bg.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+ 	font-family: 'Mali', cursive;
+  color: var(--colourSubtext);
+  line-height: 1.35em;
+	font-family: 'Mali', cursive;
+	/*http://paletton.com/#uid=13d0u0kllll001BaGbuw0vc++Wd*/
+}
+#wrapper {
+	 max-width:95%;
+  	margin-right: auto;  /* Styling for the wrapper element */
+  	margin-left: auto;
+  	padding-right: 0.8em;
+  	padding-left: 0.8em;
+}
+main{
+  grid-area:main;
+}
+article	{
+  background-color:var(--colourBG);
+  border-radius: 0.6em;
+  color:var(--colourArticletext);
+  padding-bottom: 0.5em;
+  margin-top:2em;
+}
+article p {
+  margin:1em;
+}
+article figcaption {
+  padding:1em;
+}
+aside	{
+  grid-area:aside;
+}
+article ul{
+      padding: 1em;
+}
+article ol li{
+      padding: 1em;
+}
+
+footer {
+  grid-area:footer;
+}
+header {
+
+}
+.post	{
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	background-color: var(--colourBlocks);
+  padding: 0.2em 1em 0.2em 1em;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+.post h3{
+  color: var(--colourHeadtext);
+}
+.post p{
+  color: var(--colourSubtext);
+}
+
+ul{margin:1em;}
+
+code{ color:#47a380; font-style:oblique;}
+
+/*headings------------------------------------------------------------------- */
+h1	{
+	font-family:  'Kalam', cursive;
+  color: var(--colourHeadtext);
+	font-size: 3em;
+  margin:0;
+  line-height: 0.8em;
+  margin: 0;
+  padding: 0.5em;
+}
+h2	{
+	font-family: 'Kalam', cursive;
+  color: var(--colourSubtext);
+	font-size: 2em;
+   margin: 0;
+  line-height: 0.8em;
+  margin: 0;
+  padding: 0.5em;
+}
+h3 	{
+	font-family: 'Kalam', cursive;
+  color: var(--colourHeadtext)
+	font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+}
+h4{
+  font-family: 'Kalam', cursive;
+  color: var(--colourHeadtext)
+  font-size: 2em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+
+img	{
+  width: 80%;
+}      /* Set width of media so it scales to its container */
+video{
+  width: 80%;
+  height: 80%;
+}
+/*anchors--------------------------------------------------------------------- */
+
+a:link	{
+	color: #d85dd4;
+	text-decoration:none;
+}
+a:visited {
+	color: #822a7f;
+	text-decoration:none;
+}
+a:hover {
+	color: #ff07f6;
+	text-decoration:none;
+}
+
+nav {
+  grid-area: nav;
+  width: 100%;
+  position: relative;
+}
+
+}
+.menu {
+
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--colourBlocks);
+}
+.menu li{
+  float:left;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+.menu a{
+  color: var(--colourBG);
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 0.2em
+}
+.menu a:hover {
+  background-color: var(--colourBG);
+  color: var(--colourArticletext);
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+
+.menu a:active{
+  background-color: var(--colourBG);
+  color: var(--colourArticletext);
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+/*Links Page*/
+.card img{
+  width:100%; 
+  padding:1%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+}
+.card {
+  display: flex;
+
+}
+.card-content {
+  flex-direction: column;
+  width: 100%;
+  margin: 1.25em 1.25em 0.1em 0;
+}
+
+.cards li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Media Queries */
+
+
+@media (min-width: 640px) { /* Styling for a browser with a width under 400px */
+  #wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "nav"
+    "jumbotron"
+    "main"
+    "footer";
+
+  }
+  aside{display:none;} /* Hides the aside element on small screens */
+  html {font-size: 1.2em;}
+  .card { width: 50%; }
+}
+
+
+@media (min-width: 960px) { /* Styling for a browser with a width over 1000px */
+  #wrapper {
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "nav nav"
+    "jumbotron jumbotron"
+    "main  main"
+    "footer  footer";
+    max-width:65%;
+  }
+  .card { width: 33.33%; }
+}

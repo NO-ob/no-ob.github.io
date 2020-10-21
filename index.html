@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+	<head>	
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Posts</title>
+		<link href="css/stylesheet.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+		<link rel="icon" type="image/png" href="icon/favicon.png"/>
+		<script src="script/changeTheme.js"></script>
+	</head>
+
+	<body onload="onLoad()">
+		<div id="wrapper">
+			<a id="top"></a>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Posts</a></li>			
+					<li><a href="links.html">Links</a></li>
+					<li><a href="#" onclick="changeTheme()" id="Light">Dark Mode</a></li>
+				</ul>
+			</nav>
+			<main> 
+		     	<article>
+					<header class="post"> 
+						<h2>LoliSnatcher Droid 1.5.0</h2>
+						<p>Published on <time datetime="2020-09-24">September 24, 2020</time></p>
+					</header>
+					<p>
+						I have created an android version of my other project Lolisnatcher, It has been written in Dart with Flutter for the UI. It currently supports more booru engines than the desktop version uncluding: 
+					</p>
+					<ul>
+						<li>Danbooru</li>
+						<li>Gelbooru</li>
+						<li>Moebooru</li>
+						<li>Philomena</li>
+						<li>Shimmie</li>
+						<li>e621</li>
+						<li>Szurubooru</li>
+					</ul>
+					<p>
+						It should work on all Android devices on versions 4.1.2+. There is also a pre-release Linux build but video playback is currently broken. Booru config files can be moved across from the desktop version they need to be placed in /sdcard/Lolisnatcher/Config
+					</p>
+					<p>
+						Please find app builds and the source code on <a href="https://github.com/NO-ob/LoliSnatcher_Droid">Github</a> 	
+	    			</p>
+	    			<figure> 
+						<img src="images/posts/loliSnatcherDroid/preview.png"/>
+					</figure>
+				</article>
+				<article>
+					<header class="post"> 
+						<h2>OppaiTime Game Autofill</h2>
+						<p>Published on <time datetime="2020-08-02">August 02, 2020</time></p>
+					</header>
+					<p>
+						I made a userscript for Oppaitime, the script adds an autofill button to the Game upload form. When clicked it will autofill the form with data from a games DLSite page. 
+					</p>
+					<p>
+						<a href="https://github.com/NO-ob/trackerScripts/blob/master/Oppaitime%20-%20Game%20Autofill.user.js">The Script is Available on GitHub</a> 	
+        			</p>
+				</article>
+				<article>
+					<header class="post"> 
+						<h2>batch2x</h2>
+						<p>Published on <time datetime="2020-04-24">April 24, 2020</time></p>
+					</header>
+					<p>
+						I made a Python Script for batch upscaling/removing jpeg artifacts from Images it uses Waifu2x to process the files
+					</p>
+					<p>
+						<a href="https://github.com/NO-ob/Waifu2x-Batch-Script">The Script is Available on GitHub</a> 	
+        			</p>
+				</article>
+		     	<article>
+					<header class="post"> 
+						<h2>LoliSnatcher 1.4</h2>
+						<p>Published on <time datetime="2020-02-10">February 10, 2020</time></p>
+					</header>
+					<p>
+						I wrote a piece of desktop software in Java for viewing and batch downloading Images from multiple booru websites. It currently supports the Danbooru, Gelbooru and Moebooru engines and is fully themeable with css, custom themes can be loaded from ~/.loliSnatcher/config/theme/active and some example themes are available <a href="https://github.com/NO-ob/LoliSnatcher/releases/download/1.4/theme.zip">here</a>  
+					</p>
+					<p>
+						The program has been AOT compiled using Gluon client and does not require a Java runtime. Due to this the executable is quite large but is a lot more memory friendly than a Java build
+					</p>
+					<p>
+						The source code and binary downloads are avilable on <a href="https://github.com/NO-ob/LoliSnatcher">Github</a> 	
+	    			</p>
+	    			<figure> 
+						<img src="images/posts/loliSnatcher/out.gif"/>
+					</figure>
+				</article>
+
+			    <article>
+					<header class="post"> 
+						<h2>PSP Video Script</h2>
+						<p>Published on <time datetime="2020-01-09">January 09, 2020</time></p>
+					</header>
+					<p>
+						I made a Python script which will use ffmpeg to convert anime into a format which is ready for the Playstation portable to play via it's native video player. 
+					  Softsubs will be burned onto the video track during encoding since the PSP cant use softsubs.
+					</p>
+					<p>					  
+					  <a href="https://github.com/NO-ob/PSPVideoScript">The Script is Available on GitHub</a>  
+        			</p>
+				</article>
+				<article>
+					<header class="post"> 
+						<h2>Lanraragi Scroll</h2>
+						<p>Published on <time datetime="2019-12-28">December 28, 2019</time></p>
+					</header>
+					<p>
+						I made a userscript for <a href="https://github.com/Difegue/LANraragi">Lanraragi</a> which is a piece of software that allows you to host manga for reading via the browser.
+					  The script loads all manga pages into one page you you can scroll down to read them instead of only having a single image per page.
+					</p>
+					<p>					  
+						<a href="https://github.com/NO-ob/LanraragiScroll">The Script is Available on GitHub</a> 	
+        			</p>
+				</article>
+				<article>
+					<header class="post"> 
+						<h2>CBZ Minimizer</h2>
+						<p>Published on <time datetime="2019-10-21">October 21, 2019</time></p>
+					</header>
+					<p>
+						I made a Python script to resize manga since the files I wanted to put onto my kindle were 4.4GB and it's internal storage is only 2GB
+
+						It's a very simple script just using zip and unzip to deal with the archives and imagemagick to resize the images.
+					</p>	
+					<figure> 
+						<img src="images/posts/CBZ Minimizer/mango resize.png"/>
+					</figure>
+					<p>
+						The image above shows the file size difference after running the script with an 80% resize ratio
+					</p>
+					<p>
+						<a href="https://github.com/NO-ob/CBZ-Minimizer">The Script is Available on GitHub</a> 	
+					</p>
+				</article>
+			</main>
+			<footer>
+				<p><a href="#top">Go to top</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
