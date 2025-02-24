@@ -14,8 +14,26 @@
 
 
 html {
-    cursor: url("icon/illya.ico"), default !important;
     margin: 0 0 0 0;
+}
+
+* {
+    cursor: url("icon/illya.ico"), default;
+}
+
+html, body, button, input, textarea, select, a, video, iframe, div, span {
+    cursor: url("icon/illya.ico"), default !important;
+}
+*::before, *::after,
+button, input, textarea, select, a:hover, video:hover {
+    cursor: url("icon/illya.ico"), default !important;
+}
+
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-volume-slider {
+    cursor: url("icon/illya.ico"), default !important;
 }
 
 
